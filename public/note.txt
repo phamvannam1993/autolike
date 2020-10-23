@@ -1,0 +1,185 @@
+[
+            {
+                "module": "MainApp",
+                "page": -1,
+                "logging": true
+            },
+            {
+                "module": "MainApp",
+                "page": 0,
+                "logging": true
+            },
+            {
+                "module": "MainApp",
+                "page": 1,
+                "logging": false
+            },
+            {
+                "module": "MainApp",
+                "page": 13,
+                "logging": true
+            },
+            {
+                "module": "MainApp",
+                "page": 20,
+                "logging": true
+            },
+            {
+                "module": "MainApp",
+                "page": 21,
+                "logging": true
+            },
+            {
+                "module": "MainApp",
+                "page": 22,
+                "logging": true
+            },
+            {
+                "module": "MainApp",
+                "page": 23,
+                "logging": true
+            },
+            {
+                "module": "MainApp",
+                "page": 24,
+                "logging": true
+            },
+            {
+                "module": "MainApp",
+                "page": 55,
+                "logging": true
+            },
+            {
+                "module": "MainApp",
+                "page": 70,
+                "logging": true
+            },
+            {
+                "module": "MainApp",
+                "page": 71,
+                "logging": true
+            },
+            {
+                "module": "MainApp",
+                "page": 72,
+                "logging": true
+            },
+            {
+                "module": "MainApp",
+                "page": 73,
+                "logging": true
+            },
+            {
+                "module": "MainApp",
+                "page": 74,
+                "logging": true
+            },
+            {
+                "module": "MainApp",
+                "page": 75,
+                "logging": true
+            },
+            {
+                "module": "MainApp",
+                "page": 76,
+                "logging": true
+            },
+            {
+                "module": "MainApp",
+                "page": 77,
+                "logging": true
+            },
+            {
+                "module": "MainApp",
+                "page": 78,
+                "logging": true
+            },
+            {
+                "module": "MainApp",
+                "page": 79,
+                "logging": true
+            },
+            {
+                "module": "MainApp",
+                "page": 80,
+                "logging": true
+            },
+            {
+                "module": "MainApp",
+                "page": 90,
+                "logging": false
+            },
+            {
+                "module": "MainApp",
+                "page": 91,
+                "logging": false
+            },
+            {
+                "module": "MainApp",
+                "page": 92,
+                "logging": true
+            },
+            {
+                "module": "MainApp",
+                "page": 93,
+                "logging": true
+            },
+            {
+                "module": "MainApp",
+                "page": 94,
+                "logging": true
+            },
+            {
+                "module": "MainApp",
+                "page": 95,
+                "logging": true
+            },
+            {
+                "module": "MainApp",
+                "page": 96,
+                "logging": true
+            },
+            {
+                "module": "MainApp",
+                "page": 97,
+                "logging": true
+            },
+            {
+                "module": "MainApp",
+                "page": 98,
+                "logging": true
+            },
+            {
+                "module": "MainApp",
+                "page": 99,
+                "logging": true
+            },
+            {
+                "module": "Network",
+                "logging": true,
+                "debug_logging": true,
+                "release_logging": true
+            },
+            {
+                "module": "Lotus",
+                "logging": true,
+                "debug_logging": true,
+                "release_logging": true,
+                "pages": [
+                    {
+                        "page": "0",
+                        "screen_org": false,
+                        "keyword": false,
+                        "ftr_ctr": false,
+                        "all_ctr": false,
+                        "all_txt": false
+                    }
+                ]
+            },
+            {
+                "module": "MainApp",
+                "logging": true,
+                "debug_logging": true,
+                "release_logging": true
+            }
+        ]
