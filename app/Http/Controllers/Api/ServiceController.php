@@ -180,8 +180,8 @@ class ServiceController extends Controller
                 Viplikes::where('_id', $dataContentArr['_id'])->delete();
                 return json_encode(['success' => true]);
             }
-            $count = Viplikes::orderBy('createdAt', 'DESC')->count();
-            $ListService = Viplikes::orderBy('createdAt', 'DESC')->offset($offset)->limit($limit)->get();
+            $count = Viplikes::orderBy('_id', 'DESC')->count();
+            $ListService = Viplikes::orderBy('_id', 'DESC')->offset($offset)->limit($limit)->get();
         } else if (isset($dataContentArr['search']) && !empty($dataContentArr['search'])) {
             if(isset($dataContentArr['token'])) {
                 $count = Services::where(function ($query) use ($dataContentArr) {
@@ -220,8 +220,8 @@ class ServiceController extends Controller
         } else {
             if (isset($dataContentArr['action'])) {
                 if ($dataContentArr['action'] === 'active') {
-                    $count = Services::orderBy('createdAt', 'DESC')->where('status', 'Active')->where('type', $dataContentArr['type'])->count();
-                    $ListService = Services::orderBy('createdAt', 'DESC')->where('status', 'Active')->where('type', $dataContentArr['type'])->offset($offset)->limit($limit)->get();
+                    $count = Services::orderBy('_id', 'DESC')->where('status', 'Active')->where('type', $dataContentArr['type'])->count();
+                    $ListService = Services::orderBy('_id', 'DESC')->where('status', 'Active')->where('type', $dataContentArr['type'])->offset($offset)->limit($limit)->get();
                 } else if ($dataContentArr['action'] === 'time') {
                     $count = Services::orderBy('TimeSuccess', 'DESC')->where('status', 'Active')->where('type', $dataContentArr['type'])->count();
                     $ListService = Services::orderBy('TimeSuccess', 'DESC')->where('status', 'Active')->where('type', $dataContentArr['type'])->offset($offset)->limit($limit)->get();
@@ -229,11 +229,11 @@ class ServiceController extends Controller
                     $count = Services::orderBy('TimeSuccess', 'DESC')->where('status', 'Success')->where('type', $dataContentArr['type'])->count();
                     $ListService = Services::orderBy('TimeSuccess', 'DESC')->where('status', 'Success')->where('type', $dataContentArr['type'])->offset($offset)->limit($limit)->get();
                 } else if ($dataContentArr['action'] === 'cancel') {
-                    $count = Services::orderBy('createdAt', 'DESC')->where('status', 'pause')->where('type', $dataContentArr['type'])->count();
-                    $ListService = Services::orderBy('createdAt', 'DESC')->where('status', 'pause')->where('type', $dataContentArr['type'])->offset($offset)->limit($limit)->get();
+                    $count = Services::orderBy('_id', 'DESC')->where('status', 'pause')->where('type', $dataContentArr['type'])->count();
+                    $ListService = Services::orderBy('_id', 'DESC')->where('status', 'pause')->where('type', $dataContentArr['type'])->offset($offset)->limit($limit)->get();
                 } else {
-                    $count = Services::orderBy('createdAt', 'DESC')->where('type', $dataContentArr['type'])->count();
-                    $ListService = Services::orderBy('createdAt', 'DESC')->where('type', $dataContentArr['type'])->offset($offset)->limit($limit)->get();
+                    $count = Services::orderBy('_id', 'DESC')->where('type', $dataContentArr['type'])->count();
+                    $ListService = Services::orderBy('_id', 'DESC')->where('type', $dataContentArr['type'])->offset($offset)->limit($limit)->get();
                 }
             } else {
                 if(isset($dataContentArr['time'])) {
